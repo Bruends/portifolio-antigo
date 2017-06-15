@@ -91,10 +91,11 @@ p{
     color: #1da1f2;
 }
 
-.btn-responsive-menu{    
+.btn-responsive-menu i{    
     display: none;
     font-size: 1.60em;
     padding: 10px 15px;
+    color: #1da1f2;
 }
 
 .menu-container a{
@@ -250,7 +251,7 @@ p{
 
 .btn-info{    
     padding: 15px;
-    display: flex;
+    display: flex;    
     justify-content: space-between;
     align-items: center;
 }

@@ -1,0 +1,26 @@
+@media screen and (max-width: 800px)
+{
+    .menu-links{
+        display: none;
+    }
+    
+    .btn-responsive-menu i{
+        display: block;
+    }
+    
+    .menu-responsive-active{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 53px;
+        z-index: 10;
+        background-color: #f8f8f8;
+        padding: 20px;
+    }
+    
+    
+        
+    
+}

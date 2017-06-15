@@ -1,0 +1,266 @@
+/*---- CORES ------
+    text-primario: #222;
+    texto-secundario: #555;
+    azul-claro: #1da1f2;    
+    cinza-claro: #f8f8f8;
+*/
+
+/*  font  */
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,700');
+
+
+/*-- Reset --*/
+body, header, section, ul, div,
+h1, h2, h3, p{
+    margin: 0;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+li{
+    list-style: none;
+}
+
+
+/*-- geral --*/
+body{
+    font-size: 62.5%;
+    font-family: 'Titillium Web', sans-serif, arial;
+    color: #222;
+}
+
+
+.center{
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+h2{
+    font-size: 2.5em;
+    color: #1da1f2;
+}
+
+h3{
+    font-size: 2em;
+}
+
+p{
+    font-size: 1.8em;
+}
+
+.btn{
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    width: 90px;    
+    font-size: 1.8em;
+    background-color:  #147aff;
+    border-radius: 5%;
+    margin: 10px;
+}
+
+
+.btn:hover{
+    background-color: #00baff;
+    transition: 0.4s;
+}
+
+
+/*-- Menu --*/
+.menu-bg{
+    background-color: #f8f8f8; 
+    z-index: 10;    
+    width: 100%;
+    opacity: 0.95;
+}
+
+.menu-container{     
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.80em;
+}
+
+.logo{
+    font-size: 1.60em;
+    padding: 10px;
+    color: #1da1f2;
+}
+
+.btn-responsive-menu{    
+    display: none;
+    font-size: 1.60em;
+    padding: 10px 15px;
+}
+
+.menu-container a{
+    color: #222;
+    text-decoration: none;
+}
+
+.menu-links{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 450px;   
+}
+
+.menu-links li{
+    padding: 18px;
+}
+
+.menu-links li a:before{
+    content: "<";   
+    opacity: 0;
+}
+
+.menu-links li a:after{
+    content: "/>";   
+    opacity: 0;
+}
+
+.menu-links li a:hover:before,
+.menu-links li a:hover:after,
+.menu-links li a:hover{
+    opacity: 1;
+    transition: 0.5s;
+    color: #1da1f2;
+}
+
+
+/*-- banner --*/
+.banner-bg{    
+    width: 100%;
+    background-image: url("../imgs/banner.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-container{    
+    margin-top: 60px;
+    color: #fff;
+    text-align: center;    
+}
+
+.banner-container h1{
+    font-size: 5em;
+}
+
+.btn-contact{
+    margin: 60px auto;
+    padding: 15px 20px;
+}
+
+
+
+
+/*-- Sobre --*/
+
+.about-container{
+    padding: 100px 15px;
+    text-align: center;    
+}
+
+.about-container p{
+    color: #555;
+    max-width: 455px;
+    line-height: 1.5em;
+    display: block;
+    margin: 20px auto;
+}
+
+
+/*--  habilidades  --*/
+.skills-bg{
+    text-align: center;
+    background-color:  #f8f8f8;
+}
+
+.skills-container{    
+    padding: 80px 15px;    
+}
+
+.skills-container h2{
+    margin-bottom: 30px;
+}
+
+.skills-list-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;    
+}
+
+.skills-list{
+    padding: 15px;
+    max-width: 400px;
+    min-width: 250px;
+    border: 2px solid #e6e6e6;
+    margin: 5px;
+}
+
+.skills-list i{
+    font-size: 4em;
+    padding: 10px;
+    color: #1da1f2;
+}
+
+.skills-list h3:after{
+    content: " ";
+    display: block;
+    width: 40px;
+    height: 2px;
+    background-color: #1da1f2;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+
+.skills-list li{
+    margin: 5px;
+    text-align: left;
+    font-size: 1.8em;    
+}
+
+.skills-list li:before{
+    content: "- ";
+    color: #1da1f2;
+}
+
+/*--  Contato  --*/
+.contact-container{
+    padding: 100px 15px;    
+}
+
+.info-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.btn-info{    
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*-- footer --*/
+footer{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-color: #1da1f2;
+}

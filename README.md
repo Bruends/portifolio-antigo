@@ -1,3 +1,3 @@
 ## site pessoal
 
-acesse [clicando aqui](brunomendes41.github.io)
+acesse [clicando aqui](https://brunomendes41.github.io/)

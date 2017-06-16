@@ -1,6 +1,7 @@
 $(function(){
     //Evento click do menu responsivo
-    $("#btn-responsive-menu").on("click", function(){
+    $("#btn-responsive-menu").on("click", function(event){
+       event.preventDefault();
        $(".menu-links").toggleClass("menu-responsive-active"); 
     });
     

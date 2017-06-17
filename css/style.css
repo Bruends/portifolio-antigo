@@ -5,10 +5,6 @@
     cinza-claro: #f8f8f8;
 */
 
-/*  font  */
-@import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,700');
-
-
 /*-- Reset --*/
 body, header, section, ul, div,
 h1, h2, h3, p{

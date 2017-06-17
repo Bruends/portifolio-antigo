@@ -1,5 +1,9 @@
 $(function(){
-    //Evento click do menu responsivo
+    //realizando animação em caso de refresh
+    var scroll_pos = $(window).scrollTop();
+    animate(scroll_pos);
+    
+    //Evento botão do menu responsivo
     $("#btn-responsive-menu").on("click", function(event){
        event.preventDefault();
        $(".menu-links").toggleClass("menu-responsive-active"); 
@@ -25,14 +29,18 @@ $(function(){
        
       $(window).on("scroll", function(){
          var scroll_pos = $(window).scrollTop();
-          
-          $(".anime").each(function(){
-              var object_pos = $(this).offset().top - 500;
-              if(object_pos < scroll_pos){
-                $(this).addClass("anime-init");    
-              }
-          });
+         animate(scroll_pos);
+         
       })
-    }
-   
+    }   
 })
+
+//anima os elementos
+function animate(scroll_pos){
+    $(".anime").each(function(){
+        var object_pos = $(this).offset().top - 500;
+        if(object_pos < scroll_pos){
+            $(this).addClass("anime-init");    
+        }
+    });
+}

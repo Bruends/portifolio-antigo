@@ -143,8 +143,9 @@ p{
     background-repeat: no-repeat;
     height: 750px;
     display: flex;
-    justify-content: center;
+    -ms-justify-content: center;
     align-items: center;
+
 }
 
 .banner-container{    

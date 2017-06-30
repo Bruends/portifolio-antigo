@@ -1,8 +1,8 @@
 /*---- CORES ------
     text-primario: #222;
     texto-secundario: #555;
-    azul-claro: #1da1f2;    
-    cinza-claro: #f8f8f8;
+    azul-claro: #00baff;    
+    azul-escuro: #1F2831;
 */
 
 /*-- Reset --*/
@@ -35,11 +35,12 @@ body{
 
 h2{
     font-size: 2.5em;
-    color: #1da1f2;
+    color: #00baff;
 }
 
 h3{
     font-size: 2em;
+    color: #fff;
 }
 
 p{
@@ -53,25 +54,26 @@ p{
     display: block;
     width: 90px;    
     font-size: 1.8em;
-    background-color:  #147aff;
+    
+    background-color: #00baff;
     border-radius: 5%;
     margin: 10px;
 }
 
 
 .btn:hover{
-    background-color: #00baff;
+    background-color: #1F2831;
     transition: 0.4s;
 }
 
 
 /*-- Menu --*/
 .menu-bg{
-    background-color: #f8f8f8; 
+    background-color: #1F2831;    
     z-index: 10; 
     position: fixed;    
     width: 100%;
-    opacity: 1;
+    opacity: 0.9;
 }
 
 .menu-container{     
@@ -82,25 +84,22 @@ p{
     font-size: 1.80em;
 }
 
-
-
-
 .btn-responsive-menu i{    
     display: none;
     font-size: 1.60em;
     padding: 10px 15px;
-    color: #1da1f2;
+    color: #00baff;
 }
 
 .menu-container a{
-    color: #222;
+    color: #fff;
     text-decoration: none;
 }
 
 .logo a{
     font-size: 1.60em;
     padding: 10px;
-    color: #1da1f2;
+    color: #00baff;
 }
 
 .menu-links{
@@ -129,7 +128,7 @@ p{
 .menu-links li a:hover{
     opacity: 1;
     transition: 0.5s;
-    color: #1da1f2;
+    color: #00baff;
 }
 
 
@@ -198,7 +197,7 @@ p{
 /*--  habilidades  --*/
 .skills-bg{
     text-align: center;
-    background-color:  #f8f8f8;
+    background: #1F2831;
 }
 
 .skills-container{    
@@ -220,14 +219,14 @@ p{
     padding: 15px;
     max-width: 400px;
     min-width: 250px;
-    border: 2px solid #e6e6e6;
+    border: 2px solid #00baff;
     margin: 5px;
 }
 
 .skills-list i{
     font-size: 4em;
     padding: 10px;
-    color: #1da1f2;
+    color: #00baff;
 }
 
 .skills-list h3:after{
@@ -235,7 +234,7 @@ p{
     display: block;
     width: 40px;
     height: 2px;
-    background-color: #1da1f2;
+    background-color: #00baff;
     margin: 0 auto;
     margin-bottom: 15px;
 }
@@ -243,12 +242,13 @@ p{
 .skills-list li{
     margin: 5px;
     text-align: left;
-    font-size: 1.8em;    
+    font-size: 1.8em;
+    color: #fff;
 }
 
 .skills-list li:before{
     content: "- ";
-    color: #1da1f2;
+    color: #00baff;
 }
 
 /*--  Contato  --*/
@@ -275,7 +275,7 @@ footer{
     height: 50px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center;    
     color: #fff;
-    background-color: #1da1f2;
+    background-color: #1F2831;
 }

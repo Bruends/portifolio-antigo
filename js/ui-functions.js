@@ -3,10 +3,15 @@ $(function(){
     var scroll_pos = $(window).scrollTop();
     animate(scroll_pos);
     
-    //Evento botão do menu responsivo
+    //Evento click do menu responsivo
     $("#btn-responsive-menu").on("click", function(event){
        event.preventDefault();
        $(".menu-links").toggleClass("menu-responsive-active"); 
+    });
+    
+    //fechando menu responsivo depois que o link for clicado
+    $(".menu-links a").on("click", function(){
+        $(".menu-links").removeClass("menu-responsive-active");
     });
     
     //evento de navegação do menu - scroll suave

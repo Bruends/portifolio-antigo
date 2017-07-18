@@ -32,6 +32,10 @@
     }
     
     /*-- sobre  --*/
+    .about-container{
+        flex-direction: column;
+    }
+    
     .about-text{
         order: 2;
     }

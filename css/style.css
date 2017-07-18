@@ -53,8 +53,7 @@ p{
     font-weight: bold;
     display: block;
     width: 90px;    
-    font-size: 1.8em;
-    
+    font-size: 1.8em;    
     background-color: #00baff;
     border-radius: 5%;
     margin: 10px;
@@ -183,8 +182,10 @@ p{
 .about-container{
     padding: 100px 15px;
     text-align: center;  
+    display: -ms-flex;
     display: flex;
     flex-wrap: wrap;
+    -ms-justify-content: space-around;
     justify-content: space-around;
     align-items: center;
 }
@@ -228,7 +229,7 @@ p{
     flex-wrap: wrap;    
 }
 
-.skills-list{
+.skills-list{    
     padding: 15px;
     max-width: 400px;
     min-width: 250px;

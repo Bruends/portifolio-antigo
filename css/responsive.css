@@ -15,7 +15,7 @@
         width: 100%;
         position: absolute;                
         left: 0;
-        top: 40px;
+        top: 45px;
         z-index: 10;
         background-color: #1F2831;
         padding: 20px;        
@@ -29,5 +29,15 @@
     
     .banner-bg{
         height: 600px;
+    }
+    
+    /*-- sobre  --*/
+    .about-text{
+        order: 2;
+    }
+    
+    .about-photo{
+        order: 1;
+        margin-bottom: 50px;
     }
 }

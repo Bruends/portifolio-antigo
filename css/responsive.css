@@ -16,8 +16,8 @@
         position: absolute;                
         left: 0;
         top: 45px;
-        z-index: 10;
-        background-color: #1F2831;
+        z-index: 100;
+        background-color: rgba(0,0,0,.7);
         padding: 20px;        
     }
     

@@ -69,9 +69,9 @@ p{
 /*-- Menu --*/
 .menu-bg{
     background-color: #1F2831;    
-    background-color: rgba(0,0,0,.5);
+    background-color: rgba(0,0,0,.7);
     border-bottom: 1px solid #fff;
-    z-index: 10; 
+    z-index: 100; 
     position: fixed;    
     width: 100%;
     /* opacity: 0.9;*/
@@ -187,6 +187,33 @@ p{
     -ms-justify-content: space-around;
     justify-content: space-around;
     align-items: center;
+    z-index: 10;
+}
+
+.about-bg:before{
+    margin-top: -95px;
+    background: #fff;
+    content: '';
+    width: 100%;
+    height: 100px;
+    display: block;
+    
+    transform-origin: top right;
+    transform: skewY(-2deg);
+}
+
+.about-bg:after{
+    
+    margin-top: -95px;
+    background: #fff;
+    content: '';
+    width: 100%;
+    height: 100px;
+    display: block;
+    
+    transform-origin: top left;
+    transform: skewY(2deg);
+
 }
 
 .about-text p{
@@ -208,13 +235,28 @@ p{
 
 
 /*--  habilidades  --*/
-.skills-bg{
+.skills-bg{    
     text-align: center;
     background: #1F2831;
 }
 
+.skills-bg:after{    
+    margin-top: -120px;
+    background: #1F2831;    
+      
+    content: '';
+    width: 100%;
+    height: 100px;
+    display: block;
+    
+    transform-origin: bottom right;
+    transform: skewY(-2deg);
+    
+}
+
 .skills-container{    
-    padding: 80px 15px;    
+    padding: 120px 15px;   
+    z-index: 10;
 }
 
 .skills-container h2{
@@ -266,7 +308,7 @@ p{
 
 /*--  Contato  --*/
 .contact-container{
-    padding: 100px 15px;    
+    padding: 150px 15px;    
 }
 
 .info-container p{

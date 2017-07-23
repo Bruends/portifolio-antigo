@@ -23,7 +23,7 @@ $(function(){
         var target_pos = $(target).offset().top;
         
         $("html, body").animate({
-           scrollTop: target_pos - 65,
+           scrollTop: target_pos - 30,
         }, 500);
         
     })    

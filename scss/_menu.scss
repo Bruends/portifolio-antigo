@@ -21,7 +21,7 @@
 
 .menu-links{
   @include flex;
-  padding: 15px;
+  padding: 25px;
   width: 400px;
   justify-content: space-around;
   
@@ -49,6 +49,7 @@
   .menu-container{
     justify-content: space-between;
     padding: 10px;
+    background-color: rgba(0,0,0, .9);
   }
   
   .toggle-container{

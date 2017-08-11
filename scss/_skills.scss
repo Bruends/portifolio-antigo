@@ -40,9 +40,13 @@
     display: block;
     
   }  
-  
+  ul{
+    margin: 0;
+    padding: 0;
+  }  
   li{
-    color: #fff;    
+    color: #fff;   
+    text-align: center;
     
     &::after{
       content: ' }';

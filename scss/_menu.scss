@@ -21,7 +21,7 @@
 
 .menu-links{
   @include flex;
-  padding: 25px;
+  padding: 15px;
   width: 400px;
   justify-content: space-around;
   
@@ -64,14 +64,18 @@
     display: block;
     flex-direction: column;  
     width: 100%;
-    margin-left: -27px;
+    margin-left: -17px;
     position: fixed;
     background-color: rgba(0,0,0, .9);
-    margin-top: 85px;   
-        
+    margin-top: 95px;   
     
-    li:hover::after{
-      content: none;
+        
+    li{
+      margin-bottom: 10px;
+      
+      &:hover{
+        text-decoration: none;
+      }
     }    
   }
 }

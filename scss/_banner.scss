@@ -1,0 +1,29 @@
+//BANNER
+.banner-bg{
+  width: 100%;
+  height: 650px;
+  @include flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../img/banner.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;  
+}
+
+.banner-container{
+  text-align: center;
+  color: #fff;
+  
+  
+  a{ 
+    @include button;
+    @include typograph(2);
+  }
+}
+
+//SOBRE
+.about-container{
+  @include center;  
+}
+

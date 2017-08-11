@@ -1,0 +1,112 @@
+@mixin flex{
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+//centraliza containers 
+@mixin center{
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+
+@mixin button{
+  padding: 10px 20px;
+  color: #fff;
+  border: 2px solid #fff;
+  font-family: $main_font;
+  
+  &:hover{    
+    background-color: #fff;
+    transition: 0.4s;    
+    color: $secundary_color;  
+    
+    
+        
+  }  
+}
+
+
+//tipos de tipografia:
+//1 = texto geral
+//2 = botões e menu
+//3 = h1,h2
+//4 = >= h3 e separadores
+@mixin typograph($type){
+  @if $type == 1 {
+    font-family: $main_font;
+    font-size: 16pt;
+    line-height: 28px;
+    font-weight: 300;
+    
+  } @else if $type == 2 {
+    font-family: $main_font;
+    font-size: 16pt;    
+        
+  } @else if $type == 3 {
+    font-family: $secundary_font;
+    font-size: 32pt;
+    line-height: 40px;
+    font-weight: bold;
+    
+  } @else if $type == 4 {
+    font-family: $secundary_font;
+    font-size: 20pt;
+    font-weight: bold;    
+  }
+}
+
+//tipos de separadores:
+//1 = em volta do conteudo
+//2 = abaixo do conteudo
+@mixin separator($type){
+  @if $type == 1{
+    @include flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0;
+    
+    &::before{
+      content: '';
+      display: inline-block;
+      width: 65px;
+      height: 3px;
+      background-color: $secundary_color;
+      margin: 0 5px;          
+    
+    }
+    
+    &::after{
+      content: '';
+      display: inline-block;
+      width: 65px;
+      height: 3px;
+      background-color: $secundary_color;
+      margin: 0 5px;
+      
+    }
+    
+  } @else if $type == 2 {
+    &::after{
+      content: '';
+      display: block;
+      margin: 0 auto;
+      width: 65px;
+      height: 3px;
+      background-color: $secundary_color;
+      
+    }
+    
+  }
+}
+
+
+//mixins para media queries mobile
+@mixin mobile{
+    @media screen and (max-width: 760px){
+        @content;
+    }
+}

@@ -1,143 +1,168 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="UTF-8">
-    <meta name="theme-color" content="#1F2831"/>
-    <title>Bruno Mendes</title>
-    <!--  font google fonts  -->
-    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,700" rel="stylesheet">
-    <!--  font awesome  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!--  css  -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <link rel="stylesheet" href="css/anime.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#EF4800">
+  <title>Bruno Mendes - desenvolvedor Web</title> 
+  <!-- fonts  -->   
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
+   
+  <!-- fontawesome  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
     
+  <!-- css  -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- header  -->
-    <header class="menu-bg">
-        <div class="menu-container center">
-            <!--  logo  -->
-            <span class="logo">
-                <a href="#">BM</a>
-            </span>
-        
-            <!--   Menu   -->
-            <nav>
-                <ul class="menu-links">
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#habilidades">Habilidades</a>   </li>
-                    <li><a href="#contato">Contato</a></li>
-                </ul>
-                <!-- Botão Menu responsivo -->
-                <a href="#" class="btn-responsive-menu" id="btn-responsive-menu">
-                    <i class="fa fa-bars" aria-hidden="true"></i>
-                </a>           
-            </nav>
-            
-        </div>
-    </header>
-    
-    <!--  Banner  -->
-    <section class="banner-bg" id="topo">
-        <div class="banner-container center anime to-bottom">
-            <h1>Desenvolvedor Web</h1>
-            <p>Se está procurando um desenvolvedor <span class="line">noob</span>, veio ao lugar certo.</p>
-            <a href="#contato" class=" btn btn-contact">Contato</a>
-        </div>
-    </section>
-    
-    <!--  sobre  -->
-    <section class="about-bg" id="sobre">
-        <div class="about-container center">
-            <div class="about-text">
-                <h2>{Sobre}</h2>
-                <p class="anime to-rigth">Olá, eu sou o Bruno Mendes. Desenvolvedor web iniciante, moro em São Paulo e estou cursando o 4° Semestre em Análise e Desenvolvimento de Sistemas na universidade cruzeiro do sul.            
-                Atualmente estou a procura de um estágio em desenvolvimento web, para aprofundar meus conhecimentos e ingressar no mercado.</p>
-            </div>
-            <div class="about-photo anime to-left">
-                <img src="imgs/photo.jpg" alt="Foto">
-            </div>
-        </div>
-    </section>
-    
-    <!-- habilidades  -->
-    <section class="skills-bg" id="habilidades">
+  <header class="menu-bg">
+   <nav class="menu-container">
+      <!-- LOGO   -->
+      <div class="logo-container">
+        <a href="#" class="logo">BM</a>      
+      </div>
+      <!--  Menu  -->
+      <ul class="menu-links">
+        <li><a href="#about">Sobre</a></li>
+        <li><a href="#skills">Habilidades</a></li>
+        <li><a href="#contact">Contato</a></li>
+      </ul>
+
+      <!--  Botão de menu hamburguer  -->
+      <div class="toggle-container">
+        <a href="#" id="btn-responsive-menu">
+           <i class="fa fa-bars" aria-hidden="true"></i>
+        </a>
+      </div>    
+    </nav>
+  </header>
+
+  <!-- BANNER  -->
+  <section class="banner-bg">
+    <div class="banner-container">
+      <h2>Bruno Mendes</h2>
+      <h1>Desenvolvedor web</h1><br>
+      <!--  separador  -->
+       <span class='separator'>
+         <i class="fa fa-code" aria-hidden="true"></i>
+       </span><br>
+      <a href="#contact" id="btn-contact">Contato</a>
+    </div>    
+  </section>  
+  
+  <!-- SOBRE -->
+  <section class="about-bg" id="about">
+    <div class="about-container">
+      <h2>Sobre</h2> 
+      <!--  separador  -->
+       <span class='separator'>
+         <i class="fa fa-code" aria-hidden="true"></i>
+       </span>
+       
+       <!-- Texto sobre -->
+      <div class="about-text">
+        <p>
+          Olá! Me chamo <span class="highlight">Bruno</span>. Moro em São Paulo e estou cursando o quarto semestre de Analise e desenvolvimento de sistemas na universidade Cruzeiro do Sul. Meu foco é em <span class="highlight">desenvolvimento front-end</span>, porém, tambem tenho em interesse em back-end.
+        </p>
+        <p>
+          Atualmente, estou a procura de um <span class="highlight">estágio</span> para poder aprofundar meus conhecimentos e adquirir experiencia para ingressar no mercado de trabalho.
+        </p>
+      </div>
       
-        <div class="skills-container center">
-            <h2>{Habilidades}</h2>            
-            <div class="skills-list-container">
-              
-               <!-- Front-End -->
-                <article class="skills-list anime to-rigth">
-                    <i class="fa fa-code" aria-hidden="true"></i>
-                    <h3>Front-End</h3>
-                    <ul>
-                        <li>HTML/CSS</li>
-                        <li>JavaScript</li>
-                        <li>JQuery</li>
-                        <li>AJAX (JQuery)</li>
-                        <li>Bootstrap</li>
-                    </ul>
-                </article>
-            
-                <!-- Back-end -->
-                <article class="skills-list anime to-bottom">
-                    <i class="fa fa-cogs" aria-hidden="true"></i>
-                    <h3>Back-End</h3>
-                    <ul>
-                        <li>PHP</li>
-                        <li>POO</li>
-                        <li>MySQL</li>                    
-                    </ul>
-                </article>
-                
-                <!-- Outros -->
-                <article class="skills-list anime to-left">
-                    <i class="fa fa-laptop " aria-hidden="true"></i>
-                    <h3>Outros</h3>
-                    <ul>
-                        <li>Git</li>
-                        <li>Photoshop (Básico)</li>
-                    </ul>
-                </article>
-            </div>            
-            
-        </div>
-    </section>
-    
-    <!--  Contato  -->
-    <section class="contact-bg" id="contato">
-        <div class="contact-container center">
-            <h2>Contato:</h2>
-            <div class="info-container">               
-                <p>Email: brunomendes962@gmail.com</p> 
-                
-                <!-- botões Links de contato -->
-                <a href="https://github.com/BrunoMendes41/" class="btn-info" target="_blank" >
-                    <i class="fa fa-github" aria-hidden="true"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/brunomendes41/" class="btn-info" target="_blank">
-                    <i class="fa fa-linkedin" aria-hidden="true"></i>
-                </a>  
-                
-                <a href="docs/curriculo_bruno_mendes.pdf" class="btn-info" target="_blank">
-                    <i class="fa fa-file-text" aria-hidden="true"></i>
-                </a>                              
-            </div>    
-        </div>
-    </section>
-    
-    <!--  Footer  -->
-    <footer>
-        <p>Desenvolvido por Bruno Mendes</p>
-    </footer>
-    
-    <!-- Jquery  -->
-    <script src="js/libs/jquery.min.js"></script>
-    <!--  js  -->
-    <script src="js/ui-functions.js"></script>
+      <!-- foto  -->
+      <div class="about-img">
+        
+      </div>
+    </div>
+  </section>
+  
+  <!-- Habilidades -->
+  <section class="skills-bg" id="skills">
+   <div class="skills-container">
+     <h2>Habilidades</h2>
+     
+     <!--  separador  -->
+       <span class='separator'>
+         <i class="fa fa-code" aria-hidden="true"></i>
+       </span><br><br>
+       
+     <div class="skills-articles-container" >
+      <!-- back-end -->
+      <article class="skill-article">        
+        <!-- icone -->
+        <span>
+          <i class="fa fa-cogs" aria-hidden="true"></i>
+        </span>
+        
+        <h3>Back-End</h3>
+        <ul>
+          <li>PHP</li>
+          <li>POO</li>
+          <li>MySQL</li>          
+        </ul>  
+      </article>
+      
+      <!-- front-end -->
+      <article class="skill-article">
+        <!-- icone -->
+        <span>
+          <i class="fa fa-code" aria-hidden="true"></i> 
+        </span>
+        
+        <h3>Front-End</h3>
+        <ul>
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>Javascript</li>          
+          <li>JQuery</li>          
+          <li>SASS(SCSS)</li>          
+          <li>Bootstrap</li>          
+        </ul>  
+      </article>
+        
+      <!-- outros -->
+      <article class="skill-article">       
+        <!-- icone -->
+        <span>
+          <i class="fa fa-laptop" aria-hidden="true"></i>
+        </span>
+       
+        <h3>Outros</h3>
+        <ul>
+          <li>Git</li>
+          <li>Photoshop(Básico)</li> 
+        </ul>  
+      </article>      
+         
+     </div> 
+    </div>
+  </section>
+  
+  <!-- Contato  -->
+  <footer id="contact">
+    <h3>Contato</h3>
+    <div class="social-cotainer">
+      <!-- github -->
+      <a href="https://github.com/BrunoMendes41/" target="_blank">
+        <i class="fa fa-github" aria-hidden="true"></i>
+      </a>
+      <!-- Linkedin -->
+      <a href="https://www.linkedin.com/in/brunomendes41/" target="_blank">
+        <i class="fa fa-linkedin" aria-hidden="true"></i>
+      </a>
+      <!-- curriculo  -->
+      <a href="doc/curriculo_bruno_mendes.pdf" target="_blank">
+        <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+      </a>
+    </div>
+    <p>Email: brunomendes962@gmail.com</p>
+    <small>Desenvolvido por Bruno Mendes</small>
+  </footer>
+  
+<!-- JQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- js externo -->
+<script src="js/ui-functions.js"></script>
 </body>
 </html>

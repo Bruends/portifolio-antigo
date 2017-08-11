@@ -1,0 +1,36 @@
+
+.about-bg{
+  background-color: #111;
+  color: #fff;  
+}
+
+.about-container{
+  padding: 100px 0;
+  
+  
+  p{
+    text-align: center;
+    display: block;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+}
+
+//destaque no texto
+.highlight{
+  font-weight: 400;
+  color: $secundary_color;
+}
+
+//foto
+.about-img{  
+  background-color: #fff;
+  width: 80px;
+  height: 80px;  
+  border-radius: 50%;
+  margin: 15px auto;
+  background-image: url('../img/photo.jpg');
+  background-position: center;
+  background-size: cover;
+}

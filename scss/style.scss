@@ -1,0 +1,53 @@
+//mixins
+@import 'mixins';
+
+
+//-----VARIAVEIS----
+////fonts
+$main_font: 'Roboto Condensed';
+$secundary_font: $main_font;
+
+//cores
+$secundary_color: #EF4800;
+
+
+//-----RESET-----
+body, div, section, main, article, 
+header, nav, ul, li,
+h1, h2, p{
+  margin: 0;
+}
+
+a{ text-decoration: none; }
+ul{ list-style: none; }
+
+
+
+//-----GERAL-----
+p, li{ @include typograph(1); }
+
+small{ font-family:  $main_font; }
+
+h1,h2{
+  @include typograph(3);
+  text-align: center;
+}
+
+h3{ @include typograph(4); }
+
+//separadores
+.separator{
+  @include separator(1);
+  @include typograph(4);
+}
+
+html{
+  overflow-x: hidden;
+}
+
+//-----IMPORTS PARTES----
+@import 'menu';
+@import 'banner';
+@import 'about';
+@import 'skills';
+@import 'footer';

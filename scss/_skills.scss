@@ -1,0 +1,78 @@
+.skills-bg{
+  background-image: url('../img/wallpaper.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.skills-container{
+  padding: 100px 0;
+  color: #fff;
+}
+
+.skills-articles-container{
+  @include flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  
+}
+
+.skill-article{   
+  background-color: rgba(0,0,0, .5);
+  width: 220px;
+  height: 300px;
+  padding: 15px;
+  border: 3px solid #fff;
+  margin: 15px;
+  
+  
+  i{    
+    color: $secundary_color;
+  }
+  
+  h3{
+    @include separator(2);
+  }
+  
+  span, h3{    
+    @include typograph(4);
+    text-align: center;
+    display: block;
+    
+  }  
+  
+  li{
+    color: #fff;    
+    
+    &::after{
+      content: ' }';
+      color: $secundary_color;
+    }
+    
+    &::before{
+      content: '{ ';
+      color: $secundary_color;
+      
+    }
+  }
+  
+}
+
+//responsivo
+@include mobile{
+  
+  //ordenando caixas de habilidades 
+  .skill-article:nth-child(1){
+    //back-end
+    order: 2;
+  }
+  .skill-article:nth-child(2){
+    //front-end
+    order: 1;
+  }
+  .skill-article:nth-child(3){
+    //outros
+    order: 3;
+  }
+  
+}

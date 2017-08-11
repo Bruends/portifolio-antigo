@@ -1,0 +1,76 @@
+//MENU
+.menu-bg{
+  width: 100%;
+  position: fixed;
+  
+}
+
+.menu-container{
+  @include center;
+  @include flex;
+  @include typograph(2);  
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  padding: 5px;
+  a{
+    color: #fff;
+  }
+  
+}
+
+.menu-links{
+  @include flex;
+  padding: 15px;
+  width: 400px;
+  justify-content: space-around;
+  
+  li:hover{
+    text-decoration: underline;
+    color: $secundary_color;
+    
+  }  
+}
+
+.logo{
+  @include typograph(4);
+}
+
+//escondendo botão de menu responsivo
+.toggle-container{ 
+  display: none;  
+  @include typograph(4);
+}
+
+
+
+//menu responsivo
+@include mobile{
+  .menu-container{
+    justify-content: space-between;
+    padding: 10px;
+  }
+  
+  .toggle-container{
+    display: block;    
+  }
+  
+  .menu-links{
+    display: none;
+  }
+  
+  .menu-active{
+    display: block;
+    flex-direction: column;  
+    width: 100%;
+    margin-left: -27px;
+    position: fixed;
+    background-color: rgba(0,0,0, .9);
+    margin-top: 85px;   
+        
+    
+    li:hover::after{
+      content: none;
+    }    
+  }
+}

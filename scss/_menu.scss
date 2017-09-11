@@ -2,8 +2,9 @@
 .menu-bg{
   width: 100%;
   position: fixed;
-  
 }
+
+
 
 .menu-container{
   @include center;
@@ -18,6 +19,8 @@
   }
   
 }
+
+
 
 .menu-links{
   @include flex;
@@ -35,6 +38,10 @@
   @include typograph(4);
 }
 
+.logo-container i{
+  color: $secundary_color;
+}
+
 //escondendo botão de menu responsivo
 .toggle-container{ 
   display: none;  
@@ -48,7 +55,7 @@
   .menu-container{
     justify-content: space-between;
     padding: 10px;
-    background-color: rgba(0,0,0, .9);
+    background-color: rgba(17, 17, 17, .8);
   }
   
   .toggle-container{

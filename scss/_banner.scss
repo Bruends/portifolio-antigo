@@ -6,7 +6,11 @@
   justify-content: center;
   align-items: center;
   background-image: url('../img/banner.jpg');
-  @include background-config; 
+  @include background-config;
+  
+  @include mobile{
+    background-image: url('../img/banner-phone.jpg');
+  }
 }
 
 .banner-container{

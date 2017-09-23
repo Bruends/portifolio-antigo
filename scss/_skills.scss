@@ -1,6 +1,9 @@
 .skills-bg{
   background-image: url('../img/wallpaper.jpg');
   @include background-config;
+  @include mobile{
+    background-image: url('../img/wallpaper-phone.jpg');
+  }
 }
 
 .skills-container{
@@ -12,7 +15,6 @@
   @include flex;
   justify-content: space-around;
   align-items: flex-start;
-  
 }
 
 .skill-article{   
@@ -26,6 +28,7 @@
   
   i{    
     color: $secundary_color;
+    font-size: 30pt;
   }
   
   h3{
@@ -38,10 +41,12 @@
     display: block;
     
   }  
-  ul{
-    margin: 0;
-    padding: 0;
-  }  
+}
+
+.skill-article ul{
+  margin: 0;
+  padding: 0;
+ 
   li{
     color: #fff;   
     text-align: center;
@@ -57,13 +62,10 @@
       
     }
   }
-  
 }
 
 //responsivo
 @include mobile{
-  
-  
   //ordenando caixas de habilidades 
   .skill-article:nth-child(1){
     //back-end

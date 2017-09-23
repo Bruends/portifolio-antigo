@@ -6,11 +6,25 @@
   flex-wrap: wrap;
 }
 
+
+//mixins para media queries mobile
+@mixin mobile(){ 
+  @media screen and (max-width: 812px){
+    @content;
+  } 
+}
+
+
 //centraliza containers 
 @mixin center{
   max-width: 960px;
   margin: 0 auto;
+
+  @include mobile{
+    max-width: 600px;
+  }
 }
+
 
 
 @mixin button{
@@ -38,7 +52,7 @@
     font-family: $main_font;
     font-size: 16pt;
     line-height: 28px;
-    font-weight: 300;
+    font-weight: 300; 
     
   } @else if $type == 2 {
     font-family: $main_font;
@@ -49,7 +63,8 @@
     font-size: 32pt;
     line-height: 40px;
     font-weight: bold;
-    
+
+       
   } @else if $type == 4 {
     font-family: $secundary_font;
     font-size: 20pt;
@@ -101,13 +116,6 @@
   }
 }
 
-
-//mixins para media queries mobile
-@mixin mobile{
-    @media screen and (max-width: 850px){
-        @content;
-    }
-}
 
 @mixin background-config{
    background-repeat: no-repeat; 

@@ -2,14 +2,13 @@
 .menu-bg{
   width: 100%;
   position: fixed;
+
 }
-
-
 
 .menu-container{
   @include center;
   @include flex;
-  @include typograph(2);  
+  @include typograph(2);
   justify-content: space-between;
   align-items: center;
   padding: 0 15px;
@@ -17,10 +16,7 @@
   a{
     color: #fff;
   }
-  
 }
-
-
 
 .menu-links{
   @include flex;
@@ -48,14 +44,11 @@
   @include typograph(4);
 }
 
-
-
 //menu responsivo
 @include mobile{
   .menu-container{
     justify-content: space-between;
-    padding: 10px;
-    background-color: rgba(17, 17, 17, .8);
+    padding: 10px;   
   }
   
   .toggle-container{
@@ -69,13 +62,12 @@
   .menu-active{
     display: block;
     flex-direction: column;  
-    width: 100%;
+    width: 600px;
     margin-left: -17px;
-    position: fixed;
-    background-color: rgba(0,0,0, .9);
-    margin-top: 95px;  
-     
-    
+    position: fixed;    
+    margin-top: 98px;
+    background-color: rgba(17, 17, 17, .8);
+
     li{
       margin-bottom: 10px;
       
@@ -84,7 +76,6 @@
       }
     }    
   }
-  
 }
 
 // arrumando margin do menu no firefox
@@ -94,6 +85,4 @@
       margin-top: 195px;
     }
   }
-  
 }
-
